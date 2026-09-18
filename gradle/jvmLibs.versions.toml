@@ -1,0 +1,27 @@
+[versions]
+exposed = "1.4.0"
+logback = "1.6.3"
+koinBom = "4.2.2"
+slf4jApi = "2.0.19"
+sqliteJdbc = "3.53.2.1"
+jib = "3.5.4"
+
+[libraries]
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed" }
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-migrations = { module = "org.jetbrains.exposed:exposed-migration-core", version.ref = "exposed" }
+
+
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinBom" }
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koinBom" }
+koin-logger-slf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koinBom" }
+
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4jApi" }
+sqlite-jdbc = { module = "org.xerial:sqlite-jdbc", version.ref = "sqliteJdbc" }
+
+
+[plugins]
+jib = { id = "com.google.cloud.tools.jib", version.ref = "jib" }
