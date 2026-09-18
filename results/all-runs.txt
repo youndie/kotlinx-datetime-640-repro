@@ -1,0 +1,92 @@
+=== стенд перед замером: 1.91 1.69 1.19 1/257 2628775 ===
+########## проход 1 ##########
+# label=released-0.8.0 native p1 api=TimeZone.companion zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               75.2     2008253
+of_utc                            24.0     8647309
+of_current_id                  21585.3        7698
+of_region                     206999.9         598
+current                        33425.5        3613
+to_local_cached                  205.1      396861
+to_local_current               32664.0        2806
+# sink=99800919152693885
+# label=master native p1 api=TimeZoneContext zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               68.2     1626977
+ctx_get_utc                       23.6     5180144
+ctx_current_id                 13122.7       10310
+ctx_get_current_id             19480.9        6668
+ctx_get_region                192158.4         617
+ctx_current                    31603.5        2772
+deprecated_current             34713.4        2772
+deprecated_of_region          185492.3         761
+to_local_cached                  227.5      476247
+# sink=89270343934116887
+# label=released-0.8.0 jvm p1 api=TimeZone.companion zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               59.8     1751765
+of_utc                            22.2     2059483
+of_current_id                     83.3      829320
+of_region                         71.1     1834926
+current                           39.9     3654677
+to_local_cached                  115.5     1087169
+to_local_current                 163.1      577401
+# sink=74888104169074942
+# label=master jvm p1 api=TimeZoneContext zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               57.9     2091590
+ctx_get_utc                       14.0    20000000
+ctx_current_id                    13.7     3702457
+ctx_get_current_id                93.3     1040326
+ctx_get_region                    83.6     1435667
+ctx_current                       34.1     3181289
+deprecated_current                37.3     3537559
+deprecated_of_region              86.0     1533189
+to_local_cached                   95.5     1259038
+# sink=89720347142063436
+########## проход 2 ##########
+# label=released-0.8.0 native p2 api=TimeZone.companion zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               62.6     1939568
+of_utc                            13.4     7680011
+of_current_id                  16354.6        5595
+of_region                     157187.7         668
+current                        29900.6        4351
+to_local_cached                  208.3      623071
+to_local_current               29468.1        3798
+# sink=100595618019128114
+# label=master native p2 api=TimeZoneContext zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               59.7     1850230
+ctx_get_utc                       20.4     5864189
+ctx_current_id                 11830.7       10463
+ctx_get_current_id             18209.0        7824
+ctx_get_region                161627.6         853
+ctx_current                    29494.6        4362
+deprecated_current             29177.0        4276
+deprecated_of_region          156965.0         891
+to_local_cached                  222.6      599469
+# sink=99989159347192218
+# label=released-0.8.0 jvm p2 api=TimeZone.companion zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               57.1     2131369
+of_utc                            31.5     2401470
+of_current_id                     67.0     1996970
+of_region                         60.0     1892432
+current                           35.6     3567865
+to_local_cached                   97.4     1211060
+to_local_current                 136.5      803557
+# sink=91428632388805332
+# label=master jvm p2 api=TimeZoneContext zone=Etc/UTC rounds=7
+subject                 ns/op (median)       iters
+now                               57.3     1942541
+ctx_get_utc                       14.2    20000000
+ctx_current_id                    13.5     3386953
+ctx_get_current_id                96.6     1345198
+ctx_get_region                    85.5     1195552
+ctx_current                       31.1     2899040
+deprecated_current                38.2     3120545
+deprecated_of_region              95.8     1229268
+to_local_cached                   97.8     1222495
+# sink=81579861412931025
+--- готово ---
