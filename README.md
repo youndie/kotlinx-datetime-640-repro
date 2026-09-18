@@ -1,4 +1,4 @@
-# poyas — what a time zone costs on Kotlin/Native
+# What a time zone costs on Kotlin/Native
 
 A minimal, self-contained reproducer for
 [Kotlin/kotlinx-datetime#640](https://github.com/Kotlin/kotlinx-datetime/issues/640) —
